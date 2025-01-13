@@ -34,6 +34,7 @@ public class NumberFormatExceptionDemo{
 		}
 		
 		HandleException(text);
+		input.close();
        
     }
 }
