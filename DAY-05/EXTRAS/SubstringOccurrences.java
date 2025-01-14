@@ -1,42 +1,39 @@
 import java.util.Scanner;
-import java.util.Arrays;
-public class SubstringOccurrences{
 
-	//Method which counts occurence of the substring
-	public static int countSubstring(String text, String subStringValue){
-		int j = 0;
-		int count = 0;
-		for(int i = 0; i < text.length(); i++){
-			if(j < subStringValue.length()- 1 && text.charAt(i) == subStringValue.charAt(i)) {
-				j++;
-			}else if(j >= subStringValue.length()) {
-				j = 0;
-				i--;
-				count++;
-			}
-		}
-		
-		return count;
-	}
+public class SubstringOccurrences {
+
+    // Method which counts occurrences of the substring
+    public static int countSubstring(String text, String subStringValue) {
+        int count = 0;
+        int index = 0;
+
+        // Loop to search for substring in text
+        while ((index = text.indexOf(subStringValue, index)) != -1) {
+            count++;
+            index += subStringValue.length();
+        }
+
+        return count;
+    }
+
+    public static void main(String[] args) {
+        // Declaring scanner object
+        Scanner input = new Scanner(System.in);
+
+        // Get user input string
+        System.out.println("Enter the string: ");
+        String text = input.next();
 	
-	
-	
-	public static void main(String[] args){
-	
-		// Declaring scanner object
-		Scanner input = new Scanner(System.in);
 		
-		// Get user input string
-		System.out.println("Enter the string : ");
-		String text = input.next();
-		
-		System.out.println("Enter the substring string : ");
-		String subString = input.next();
-		int ans = countSubstring(text,subString);
-		
-		System.out.println(ans);
-		
-		input.close();
-		
-	}
+        System.out.println("Enter the substring: ");
+        String subString = input.next();
+
+        // Count occurrences of substring
+        int ans = countSubstring(text, subString);
+
+        // Print the result
+        System.out.println("The substring appears " + ans + " times in the given string.");
+
+        input.close();
+    }
 }
