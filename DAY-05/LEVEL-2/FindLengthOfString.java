@@ -8,7 +8,7 @@ public class FindLengthOfString{
 		int i = 0;
 		int count = 0;
 		
-		// use try catch to caught runtime exception 
+		// use try catch to caught runtime exception                    
 		try{
 			while(true){
 				char ch = str.charAt(i);
