@@ -50,7 +50,7 @@ public class DisplayWordsInMatrix{
 	
 	public static int countLength(String text){
 		int count = 0;
-		for(char ch : text.toCharArray(text)){
+		for(char ch : text.toCharArray()){
 			count++;
 		}
 		return count;
