@@ -28,15 +28,17 @@ public class IllegalArgumentExceptionDemo{
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
         System.out.print("Enter a string: ");
-        String input = scanner.nextLine();
+        String userString = input.nextLine();
 
         // Call the method to generate the exception
-        generateException(input);
+        generateException(userString);
 
         // Call the method to handle the RuntimeException
-        handleRuntimeException(input);
+        handleRuntimeException(userString);
+        // scanner object close
+        input.close();
     }
 }

@@ -21,8 +21,6 @@ public class ToLowerCase{
 		String LowerCaseUsingMethod = text.toLowerCase(); // variable store upper using inbuilt mehtod
 		String lowerCaseByMe = ConvertToLowerCase(text); // variable store upper case using our  class method
 		
-		System.out.println(LowerCaseUsingMethod + " ye check" );
-		System.out.println(lowerCaseByMe + " ye check" );
 		
 		// check if both are same result or not
 		if(LowerCaseUsingMethod.equals(lowerCaseByMe)) System.out.println("Both the strings are equal "+lowerCaseByMe);

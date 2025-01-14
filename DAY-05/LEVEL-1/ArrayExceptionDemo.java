@@ -5,7 +5,7 @@ public class ArrayExceptionDemo {
     public static void generateException(String[] names) {
         System.out.println("Attempting to access an index outside the array bounds...");
         // This will throw an ArrayIndexOutOfBoundsException
-        System.out.println(names[names.length])
+        System.out.println(names[names.length]);
     }
     // Method to handle ArrayIndexOutOfBoundsException
     public static void handleException(String[] names) {
