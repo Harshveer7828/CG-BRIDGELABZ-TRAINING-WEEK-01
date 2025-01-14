@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Arrays;
 public class LongestWordSequence{
 
 	//Method which find the longest word sequence
