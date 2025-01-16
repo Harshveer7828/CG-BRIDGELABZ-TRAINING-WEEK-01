@@ -15,6 +15,7 @@ public class CharacterFrequency {
         for (int i = 0; i < 256; i++) {
             if (freq[i] > 0) {
                 uniqueCount++;
+                
             }
         }
 
