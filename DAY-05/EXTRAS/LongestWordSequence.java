@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 public class LongestWordSequence{
 
 	//Method which find the longest word sequence
@@ -11,6 +12,7 @@ public class LongestWordSequence{
 		// Iterate over the string array
 		for(int i = 0; i < splittedString.length; i++){
 			String word = splittedString[i];
+			
 			// checks the length o the string from array and str length
 			if(word.length() > str.length()){
 				str = "";

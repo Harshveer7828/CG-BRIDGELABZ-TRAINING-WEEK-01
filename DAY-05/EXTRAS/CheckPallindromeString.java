@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class CheckPallindromeString{
 
-	//Method which checks is string is pallindrome or not
+	//Method which checks if string is pallindrome or not
 	public static boolean isPallindrome(String text){
 		int i = 0, j = text.length() - 1;
 		while(i < j){
@@ -9,8 +9,6 @@ public class CheckPallindromeString{
 		}
 		return true;
 	} 
-	
-	
 	public static void main(String[] args){
 	
 		// Declaring scanner object

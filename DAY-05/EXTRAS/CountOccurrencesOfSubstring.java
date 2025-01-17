@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
-public class SubstringOccurrences {
-
+public class CountOccurrencesOfSubstring {
     // Method which counts occurrences of the substring
     public static int countSubstring(String text, String subStringValue) {
         int count = 0;
@@ -12,10 +11,8 @@ public class SubstringOccurrences {
             count++;
             index += subStringValue.length();
         }
-
         return count;
     }
-
     public static void main(String[] args) {
         // Declaring scanner object
         Scanner input = new Scanner(System.in);
@@ -23,7 +20,6 @@ public class SubstringOccurrences {
         // Get user input string
         System.out.println("Enter the string: ");
         String text = input.next();
-	
 		
         System.out.println("Enter the substring: ");
         String subString = input.next();
@@ -34,6 +30,7 @@ public class SubstringOccurrences {
         // Print the result
         System.out.println("The substring appears " + ans + " times in the given string.");
 
-        input.close();
-    }
+		//close scanner
+		input.close();
+	}
 }
